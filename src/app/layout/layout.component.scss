@@ -1,0 +1,6 @@
+header {
+  position: relative;
+  display: flex;
+  min-height: var(--header-size);
+  font-size: clamp(1rem, 0.5rem + 1.4vw, 1.6rem);
+}

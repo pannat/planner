@@ -1,0 +1,33 @@
+:root {
+  --transition: 0.3s;
+  --transition-fast: 0.15s;
+  --header-size: clamp(40px, 10vw, 90px);
+  --color-nav: rgba(255, 255, 255, 0.8);
+  --color-nav-visited: rgba(255, 128, 128, 0.2);
+  --color-nav-hover: #fff;
+}
+
+.page {
+  font:
+    clamp(1rem, 0.5rem + 0.9vw, 1.4rem) Arial,
+    sans-serif;
+  background: linear-gradient(#052433 0%, #0b5174 100%);
+
+  @media (min-width: 80rem) {
+    display: grid;
+    grid-template-columns: minmax(10rem, 20%) minmax(min(40rem, 40%), 1fr) minmax(
+        320px,
+        20%
+      );
+    grid-template-rows: minmax(var(--header-size), auto) 1fr;
+  }
+
+  @media (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: minmax(min(10em, 272px), 20%) minmax(
+        min(728px, 80%),
+        1fr
+      );
+    grid-template-rows: minmax(var(--header-size), auto) 1fr;
+  }
+}
