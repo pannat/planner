@@ -1,6 +1,8 @@
 <header>
-  <a routerLink="/">Planner</a>
-  <ng-content select="search"></ng-content>
+  <a class="logo" routerLink="/">Planner</a>
+  <nav>
+    <a tuiButton routerLink="events/blank">Создать событие</a>
+  </nav>
 </header>
 <main>
   <ng-content></ng-content>

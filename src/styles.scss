@@ -8,12 +8,12 @@
 }
 
 .page {
+  margin: 0;
   font:
     clamp(1rem, 0.5rem + 0.9vw, 1.4rem) Arial,
     sans-serif;
-  background: linear-gradient(#052433 0%, #0b5174 100%);
 
-  @media (min-width: 80rem) {
+  /*@media (min-width: 80rem) {
     display: grid;
     grid-template-columns: minmax(10rem, 20%) minmax(min(40rem, 40%), 1fr) minmax(
         320px,
@@ -29,5 +29,5 @@
         1fr
       );
     grid-template-rows: minmax(var(--header-size), auto) 1fr;
-  }
+  }*/
 }

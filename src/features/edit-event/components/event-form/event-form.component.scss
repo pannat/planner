@@ -1,0 +1,11 @@
+:host {
+  max-width: 680px;
+  padding-left: var(--tui-padding-m);
+  display: block;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tui-padding-m);
+}

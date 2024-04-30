@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@entities/*": ["src/entities/*/index.ts"],
+      "@features/*": ["src/features/*/index.ts"],
+      "@libs/*": ["src/libs/*/index.ts"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
