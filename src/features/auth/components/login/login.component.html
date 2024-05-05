@@ -1,0 +1,17 @@
+<form [formGroup]='service.form' (ngSubmit)='service.login()'>
+  <h1>Вход</h1>
+  <div class='fieldset'>
+    <p class='field'>
+      <tui-input formControlName='login'>Логин</tui-input>
+      <tui-error formControlName='login' [error]='[] | tuiFieldError | async'></tui-error>
+    </p>
+    <p class='field'>
+      <tui-input-password formControlName='password'>Пароль</tui-input-password>
+      <tui-error formControlName='password' [error]='[] | tuiFieldError | async'></tui-error>
+    </p>
+  </div>
+
+  <div class='footer'>
+    <button tuiButton appearance='secondary' [disabled]='!!(service.isLoading$ | async)'>Войти</button>
+  </div>
+</form>

@@ -6,6 +6,8 @@
     "paths": {
       "@entities/*": ["src/entities/*/index.ts"],
       "@features/*": ["src/features/*/index.ts"],
+      "@widgets/*": ["src/widgets/*/index.ts"],
+      "@pages/*": ["src/pages/*/index.ts"],
       "@libs/*": ["src/libs/*/index.ts"]
     },
     "outDir": "./dist/out-tsc",

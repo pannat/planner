@@ -1,17 +1,17 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
 header {
   position: relative;
+  padding: 0 var(--tui-padding-s);
   display: flex;
+  gap: var(--tui-padding-s);
   justify-content: space-between;
   align-items: center;
   min-height: var(--header-size);
   font-size: clamp(1rem, 0.5rem + 1.4vw, 1.6rem);
   border-bottom: 1px solid var(--tui-text-03);
-}
-
-.logo {
-  padding: var(--tui-padding-s);
-}
-
-nav {
-  padding: var(--tui-padding-s);
 }

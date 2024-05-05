@@ -1,0 +1,8 @@
+<nav>
+  @if (authService.isAuthorized) {
+    <a tuiButton routerLink="events/blank">Создать событие</a>
+  } @else {
+   <a tuiButton routerLink="/login" routerLinkActive="active" size="m">Войти</a>
+   <a tuiButton routerLink="/sign-up" routerLinkActive="active" size="m">Зарегистрироваться</a>
+  }
+</nav>
